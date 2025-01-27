@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Website</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-brand-green">
+    <header class="bg-brand-green">
+      <nav class="max-w-7xl mx-auto px-4 py-5">
+        <div class="flex items-center justify-between">
+          <!-- Nav Links (hidden on small screens) -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#rsvp" class="text-brand-cream hover:text-gray-300">RSVP</a>
+            <a href="#faq" class="text-brand-cream hover:text-gray-300">FAQ</a>
+            <a href="#registry" class="text-brand-cream hover:text-gray-300">Registry</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button class="text-white" id="menu-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="md:hidden mt-4 hidden" id="mobile-menu">
+          <a href="#rsvp" class="block text-white py-2 px-4">RSVP</a>
+          <a href="#faq" class="block text-white py-2 px-4">FAQ</a>
+          <a href="#registry" class="block text-white py-2 px-4">Registry</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 pb-16 text-brand-cream space-y-2">
+      <div class="relative">
+        <img src="img/flower.png" alt="" class="absolute -bottom-20 -left-10 w-40 h-auto rotate-45 -z-10" aria-hidden="true">
+        <img src="img/flower.png" alt="" class="absolute -top-50 -right-0 w-40 h-auto -z-10" aria-hidden="true">
+
+        <section class="">
+          <h2 class="text-xl text-center italic">Eugene & Patricia</h2>
+          <p class="text-xl text-center">and</p>
+          <h2 class="text-xl text-center italic">Ian & Julia</h2>
+          <p class="text-lg text-center">invite you to celebrate the wedding of</p>
+          <h1 class="text-6xl text-center italic p-8">Yasmine & Harry</h1>
+          <p class="text-lg text-center">Saturday 27th September 2025</p>
+        </section>
+
+        <section class="mt-12 space-y-2 pb-16">
+          <p class="text-lg text-center">Guests' arrival at 3:30pm</p>
+          <p class="text-lg text-center">Ceremony at 4:00pm</p>
+          <p class="text-base text-center">with reception to follow</p>
+          <address class="text-lg text-center">1 Marylebone Rd, London, NW1 4AQ</address>
+          <p class="text-lg text-center">PLEASE RSVP BY 1st MAY 2025</p>
+        </section>
+      </div>
+
+    <section id="faq" class="max-w-4xl mx-auto p-6 text-brand-cream">
+      <h2 class="text-3xl text-center mb-8">FAQs</h2>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Where is the wedding?</h3>
+          <p>
+            Both the ceremony and reception are being held at One Marylebone, 1 Marylebone Road,
+            London, NW1 4AQ. The venue is a 1-minute walk from Great Portland Street underground
+            station (Circle, Metropolitan and Hammersmith & City lines) and a 3-minute walk from
+            Regent's Park underground station (Bakerloo line). It is 10 minutes by taxi from King's
+            Cross, Euston and Paddington train stations.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">When should I arrive?</h3>
+          <p>
+            Yaz will be walking down the aisle at 4:00pm! So please make sure to get to the venue
+            for 3:30pm.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">When does the party end?</h3>
+          <p>1:00am.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">What is the itinerary for the day?</h3>
+          <p class="whitespace-pre-line">
+            3:30pm: Guests arrive
+            4:00pm: Wedding ceremony
+            4:30pm: Drinks reception
+            6:00pm: Dinner and speeches
+            8:30pm: Dancing
+            1:00am: Carriages
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">When should I RSVP by?</h3>
+          <p>Please RSVP by 1 May 2025.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">What's the dress code?</h3>
+          <p>Lounge suits and chic attire. We're thinking semi-formal and elegant.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Is any of the wedding day being held outside?</h3>
+          <p>The whole day will be indoors. So no need to worry about the rain.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Where can I stay nearby?</h3>
+          <p>
+            The venue has discounted rates with the following nearby hotels:
+            <a
+              href="https://www.melia.com/en/hotels/united-kingdom/london/melia-white-house"
+              class="underline"
+              >Melia White House</a
+            >
+            and
+            <a href="https://www.treehousehotels.com/london" class="underline">Treehouse London</a>.
+            Please get in touch with us if you would like to take advantage of their discount.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Am I allowed to bring a plus one?</h3>
+          <p>Unfortunately, we don't have space for guests to bring plus ones.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Will children be attending the wedding?</h3>
+          <p>
+            In order to allow parents a well-deserved evening off, we have chosen for our wedding
+            day to be an adult-only occasion. We hope this advance notice means you are still able
+            to attend and will enjoy having the evening off!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">
+            Will there be meal options for guests with dietary restrictions or allergies?
+          </h3>
+          <p>
+            Yes, please include details of your dietary requirements in the RSVP form on this
+            website.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Am I allowed to take photos at your wedding?</h3>
+          <p>
+            Throughout the day you are welcome to take pictures, except for during the wedding
+            ceremony when we ask that you keep phones and cameras switched off. Our wedding
+            photographer will still be taking snaps though!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Can I get you a gift?</h3>
+          <p>
+            We're thrilled that you're coming to celebrate with us, and your presence is present
+            enough! But, if you would like to buy us a gift, we have a list of options on <a href="https://prezola.com/buy/view/221050" class="underline">Prezola</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="registry" class="max-w-4xl mx-auto p-6 text-brand-cream">
+      <h2 class="text-3xl text-center mb-8">Registry</h2>
+      <div>
+        <p>
+            Your presence at our wedding is all the present that we need! But, if you would like to buy us a gift, we have a list of options on <a href="https://prezola.com/buy/view/221050" class="underline">Prezola</a>.
+          </p>
+        </div>
+    </section>
+
+    </main>
+
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
