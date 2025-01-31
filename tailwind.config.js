@@ -10,6 +10,7 @@ module.exports = {
           orange: "#E66B12", // R: 230, G: 107, B: 18
           cream: "#FEF0E8", // R: 254, G: 240, B: 232
           green: "#9CAA56", // R: 156, G: 170, B: 86
+          white: "#FFFFFF",
         },
         fontFamily: {
           sans: ['Cochin', 'cursive'],
