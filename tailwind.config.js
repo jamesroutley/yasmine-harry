@@ -13,7 +13,7 @@ module.exports = {
           white: "#FFFFFF",
         },
         fontFamily: {
-          sans: ['Cochin', 'cursive'],
+          sans: ["Cochin", "cursive"],
         },
       },
     },
