@@ -1,6 +1,4 @@
-*,
-::before,
-::after {
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -132,7 +130,7 @@
 
 ::before,
 ::after {
-  --tw-content: "";
+  --tw-content: '';
 }
 
 /*
@@ -154,10 +152,9 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -200,7 +197,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -246,8 +243,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -348,9 +344,9 @@ select {
 */
 
 button,
-input:where([type="button"]),
-input:where([type="reset"]),
-input:where([type="submit"]) {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -397,7 +393,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -490,8 +486,7 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -572,19 +567,108 @@ html {
   position: relative;
 }
 
-.-bottom-20 {
-  bottom: -5rem;
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
 }
 
-.-left-10 {
-  left: -2.5rem;
+.-bottom-20 {
+  bottom: -5rem;
 }
 
 .-right-0 {
   right: -0px;
 }
 
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-\[200\] {
+  top: -200;
+}
+
+.-top-\[200px\] {
+  top: -200px;
+}
+
+.-top-\[400px\] {
+  top: -400px;
+}
+
+.-top-\[300px\] {
+  top: -300px;
+}
+
+.-right-\[100px\] {
+  right: -100px;
+}
+
+.-right-\[200px\] {
+  right: -200px;
+}
+
+.-top-\[350px\] {
+  top: -350px;
+}
+
+.-right-\[150px\] {
+  right: -150px;
+}
+
+.-bottom-\[50px\] {
+  bottom: -50px;
+}
+
+.-bottom-\[80px\] {
+  bottom: -80px;
+}
+
+.-left-\[230px\] {
+  left: -230px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.-top-\[130\] {
+  top: -130;
+}
+
+.-top-\[130px\] {
+  top: -130px;
+}
+
+.-right-\[190px\] {
+  right: -190px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.-z-50 {
+  z-index: -50;
+}
+
 .-z-10 {
+  z-index: -10;
+}
+
+.-z-\[10\] {
   z-index: -10;
 }
 
@@ -599,10 +683,6 @@ html {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .mt-4 {
@@ -651,9 +731,22 @@ html {
 
 .rotate-45 {
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
-    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
-    scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[35deg\] {
+  --tw-rotate: -35deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-\[210deg\] {
+  --tw-rotate: -210deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[210deg\] {
+  --tw-rotate: 210deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .items-center {
@@ -682,6 +775,22 @@ html {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .bg-brand-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 232 / var(--tw-bg-opacity, 1));
@@ -695,6 +804,10 @@ html {
 .bg-brand-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-2 {
@@ -744,11 +857,6 @@ html {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -813,12 +921,94 @@ html {
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 640px) {
+  .sm\:-top-\[130px\] {
+    top: -130px;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:top-\[0px\] {
+    top: 0px;
+  }
+
+  .md\:-top-\[0px\] {
+    top: -0px;
+  }
+
+  .md\:-top-\[255px\] {
+    top: -255px;
+  }
+
+  .md\:-right-\[0px\] {
+    right: -0px;
+  }
+
+  .md\:-top-\[180px\] {
+    top: -180px;
+  }
+
+  .md\:-right-\[95px\] {
+    right: -95px;
+  }
+
+  .md\:-left-\[90px\] {
+    left: -90px;
+  }
+
+  .md\:-top-\[160px\] {
+    top: -160px;
+  }
+
+  .md\:-right-\[160px\] {
+    right: -160px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:rotate-\[\] {
+    --tw-rotate: ;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:rotate-\[240deg\] {
+    --tw-rotate: 240deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:top-\[\] {
+    top: ;
+  }
+
+  .lg\:top-\[0px\] {
+    top: 0px;
+  }
+
+  .lg\:-right-\[110px\] {
+    right: -110px;
+  }
+
+  .lg\:-right-\[80px\] {
+    right: -80px;
+  }
+
+  .lg\:-right-\[50px\] {
+    right: -50px;
+  }
+
+  .lg\:-right-\[0px\] {
+    right: -0px;
+  }
+
+  .lg\:-left-\[10px\] {
+    left: -10px;
   }
 }
